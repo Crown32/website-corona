@@ -243,7 +243,7 @@ u h1{
 
 /* Formatação das imagens links*/
 
-.boxFigures{
+.figures{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -256,13 +256,13 @@ u h1{
     text-align: center;
 }
 
-.boxFigures figure{
+.figures figure{
     max-width: 280px;
     padding: 50px;
     text-align: center;
 }
 
-.boxFigures figure img:hover{
+.figures figure img:hover{
     transition: 0.2s;
     width: 210px;
     height: 210px;
