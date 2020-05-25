@@ -131,10 +131,24 @@ nav ul li a:hover{
         color: white;
     }
 }
+/*Formatação do menu retrátil*/
+.menu{
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
 
 @media screen and (max-width:600px){
+    .menu{
+        display: unset;
+    }
+    
     nav{
-        height: 230px;
+        height: 80px;
+        transition: .2s;
     }
     nav{
         text-align: center;
@@ -145,9 +159,19 @@ nav ul li a:hover{
         padding: 10px;
     }
 
-    nav ul li{
+    nav ul li a{
+        display: none;
         padding: 10px;
     }
+
+    #check:checked~nav{
+        height: 280px;
+    }
+
+    #check:checked~nav ul li a{
+        display: block;
+    }
+
 }
 
 /*Formatação do article*/
@@ -166,6 +190,7 @@ article{
     article{
         padding: 0;
         margin: 20px;
+        padding-top: 20px;
     }
 }
 
@@ -190,10 +215,6 @@ article{
 .icon{
     width: 200px;
     height: 200px;
-}
-
-img{
-    padding: 30px;
 }
 
 hr{
