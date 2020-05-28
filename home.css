@@ -3,6 +3,7 @@
 *{
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 /*Formatação geral*/
@@ -12,11 +13,10 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(235, 235, 235);
+    background-color: white;
 }
 
 #principal{
-    /*Display é usado para especificar como um bloco aparece na tela, flex seria como desativar a quebra de linha enquanto houver espaço para o conteúdo*/
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -36,7 +36,6 @@ header{
     display: flex;
     height: 150px;
     background-image:linear-gradient(120deg, #851e22 20%, #545454 100%);
-    /*Ajusta o conteúdo no eixo Y*/
     align-items: center;
 }
 
@@ -48,7 +47,6 @@ header h1{
 
 @media screen and (max-width:730px){
     header{ 
-        /*Ajustar o conteúdo no eixo X*/
         justify-content: center;
     }
     
@@ -59,13 +57,15 @@ header h1{
 
 /*Formatação navbar*/
 nav{
+    position: sticky;
+    top: -5px;
     background-image:linear-gradient(120deg, #851e22 11%, #545454 100%);
+    width: 100%;
 }
 
 nav ul{
     align-items: center;
     display: flex;
-    /*Cria um espaçamento igual entre os itens de uma box*/
     justify-content: space-around;
     list-style: none;
     height: 60px;
@@ -105,7 +105,6 @@ nav ul li a:hover{
     }
     
     nav ul{
-        /*Direção das quebras de linha*/
         flex-direction:column ;
     }
     
@@ -150,11 +149,11 @@ nav ul li a:hover{
     }
     
     nav{
-        height: 80px;
+        height: 70px;
         transition: .2s;
     }
     nav{
-        text-align: center;
+        text-align: left;
     }
 
     nav ul{
@@ -176,10 +175,62 @@ nav ul li a:hover{
     }
 
 }
+/*Formatação img background*/
+.background{
+    background-image: url(./imgs/fundo.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    border: 1px solid black;
+}
 
+.background h1{
+    font-size: 70px;
+    padding-bottom: 15px;
+}
+
+.background h3{
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+.background a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    background-color:#851e22 ;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: 20px;
+    transition: .2s;
+}
+
+.background a:hover{
+    color: black;
+    background-color:#943538 ;
+    padding: 12px 17px;
+}
+
+@media screen and (max-width:600px){
+    .background h1{
+        font-size: 50px;
+    }
+    
+    .background h3{
+        font-size: 25px;
+    }
+    
+}
+
+/*Formatação do sobre*/
 /*Formatação do article*/
 
-article{
+.sobre article{
     padding-top:80px;
     max-width: 100%;
     align-items: center;
@@ -189,26 +240,26 @@ article{
     margin: 20px;
 }
 
-article div{
+.sobre article div{
     padding-bottom: 40px;
     max-width: 800px;
     text-align: justify;
 }
 
-article figure img{
+.sobre article figure img{
     max-width:100%;
     height: 100%;
 }
 
 @media screen and (max-width:600px){
-    article{
+    .sobre article{
         padding-top: 20px;
     }
 }
 
 /*Formatação do aside*/
 
-aside{
+.sobre aside{
     max-width: 100%;
     align-items: center;
     display: flex;
@@ -217,30 +268,30 @@ aside{
     margin: 20px;
 }
 
-aside div{
+.sobre aside div{
     max-width: 800px;
     text-align: justify;
     padding-bottom: 40px;
 }
 
-aside figure img{
+.sobre aside figure img{
     max-width: 100%;
     height: 100%;
 }
 
 /*Formatação da api*/
-u h1{
+.sobre u h1{
     text-align: center;
     padding: 50px
 }
 
-.boxApi{
+.sobre .boxApi{
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
 }
 
-.api{
+.sobre .api{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -250,22 +301,22 @@ u h1{
     max-height:330px ;
 }
 
-.api .externo .interno{
+.sobre .api .externo .interno{
     padding: 40px;
 }
 
-.api .externo .interno h2{
+.sobre .api .externo .interno h2{
     text-align: center;
 }
 
-.api .externo .interno p{
+.sobre .api .externo .interno p{
     text-align: center;
     padding: 20px;
     font-size: 22px;
 }
 
 @media screen and (max-width:820px){
-    .api{
+    .sobre .api{
         margin-left: 20px;
         margin-right: 20px;
         flex-direction: column;
@@ -273,9 +324,171 @@ u h1{
     }
 }
 
+.sobre .g1{
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+
+/*Article dos sintomas*/
+/*Formatação do article*/
+
+.sintomas{
+    margin-top:-40px ;
+}
+
+.sintomas article{
+    padding: 80px;
+    text-align: justify;
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width:860px){
+    .sintomas article{
+        padding: 0;
+        margin: 20px;
+        padding-top: 20px;
+    }
+}
+
+/*Formatação do aside*/
+.sintomas aside{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px;
+}
+
+.sintomas .list{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border: black solid 1px;
+    margin: 40px;
+}
+
+.sintomas .list ul{
+    font-size: 20px;
+}
+
+.sintomas aside figure img{
+    max-width: 100%;
+    height: 100%;
+}
+
+/*Formatação dos cuidados*/
+/*Formatação do article*/
+.cuidados{
+    margin-top: -40px
+}
+
+.cuidados article ul{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.cuidados article{
+    padding: 80px;
+    text-align: justify;
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width:860px){
+    .cuidados article{
+        padding: 0;
+        margin: 20px;
+        padding-top: 20px;
+    }
+}
+
+/*Formatação das imagens*/
+.cuidados .imgs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.cuidados .imgs div{
+    padding: 50px;
+    max-width: 250px;
+    text-align: center;
+}
+
+.cuidados .imgs div p{
+    padding: 30px;
+    text-align: center;
+}
+
+.cuidados .icon{
+    width: 200px;
+    height: 200px;
+}
+
+.cuidados hr{
+    color: black;
+}
+
+.cuidados .destaque{
+    color:#851e22 ;
+}
+
+/*Formatação do curiosidades*/
+/*Formatação do article*/
+.curiosidades article ul{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.curiosidades article{
+    margin-top: -80px;
+    padding: 80px;
+    text-align: justify;
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width:860px){
+    .curiosidades article{
+        padding: 0;
+        margin: 20px;
+        padding-top: 20px;
+    }
+}
+
+/*Formatação do aside*/
+.curiosidades aside{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.curiosidades aside div{
+    padding: 50px;
+    max-width: 800px;
+}
+
+.curiosidades aside figure{
+    max-width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+}
+
+.curiosidades aside figure iframe{
+    max-width: 100%;
+}
+
+@media screen and (max-width:860px){
+    .curiosidades aside div{
+        padding: 0;
+        padding-bottom: 50px;
+    }
+}
+
 /* Formatação das imagens links*/
 
 .figures{
+    margin-top: -20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -298,11 +511,6 @@ u h1{
     transition: 0.2s;
     width: 210px;
     height: 210px;
-}
-
-.g1{
-    margin-top: 20px;
-    margin-bottom: -20px;
 }
 
 /*Formatação do rodapé*/

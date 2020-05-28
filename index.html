@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="home.css">
     <!-- Meta para compatibilidade e resposividade-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corona vírus</title>
@@ -22,94 +22,273 @@
                 <label for="check"><img src="./imgs/menu.png" width="50px" height="50px"></label>
             </div>
 
-            <li><a class="selecionado" href="">Sobre o Coronavírus</a></li>
-            <li><a href="sintomas.html">Sintomas</a></li>
-            <li><a href="cuidados.html">Cuidados</a></li>
-            <li><a href="curiosidades.html">Curiosidades</a></li>
+            <li><a href="#sobre">Sobre o Coronavírus</a></li>
+            <li><a href="#sintomas">Sintomas</a></li>
+            <li><a href="#cuidados">Cuidados</a></li>
+            <li><a href="#curiosidades">Curiosidades</a></li>
         </ul>
     </nav>
     
     <section id="principal">
 
-        <article>
-            <div>
-                <h1>Sobre o Coronavírus</h1>
+        <section class="background"> <!--Img de Background-->
+            <h1>Covid-19</h1>
+            <h3>"O vírus que assombra o mundo"</h3>
+            <a href="#sobre" class="button">Saiba Mais</a>
+        </section>
+
+        <section class="sobre" id="sobre"> <!--Section Sobre-->
+
+            <article>
+                <div>
+                    <h1>Sobre o Coronavírus</h1>
+                    <br>
+                    <p>A doença de coronavírus (COVID-19) é uma doença infecciosa causada por um coronavírus recém-descoberto.
+                        <br><br>
+                        A maioria das pessoas infectadas com o vírus COVID-19 experimentará doença respiratória leve a moderada e se recuperará sem a necessidade de tratamento especial. Pessoas mais velhas e pessoas com problemas médicos subjacentes, como doenças cardiovasculares, diabetes, doenças respiratórias crônicas e câncer, têm maior probabilidade de desenvolver doenças graves.
+                        <br><br>
+                        A melhor maneira de prevenir e desacelerar a transmissão é estar bem informado sobre o vírus COVID-19, a doença que causa e como se espalha. Proteja-se e a outros de infecções lavando as mãos ou usando um esfregão à base de álcool com frequência e sem tocar no rosto. 
+                        <br><br>
+                        O vírus COVID-19 se espalha principalmente por gotículas de saliva ou secreção nasal quando uma pessoa infectada tosse ou espirra, por isso é importante que você pratique etiqueta respiratória (por exemplo, tossindo em um cotovelo flexionado).
+                        <br><br>
+                        No momento, não existem vacinas ou tratamentos específicos para o COVID-19. No entanto, existem muitos ensaios clínicos em andamento avaliando possíveis tratamentos. A OMS continuará fornecendo informações atualizadas assim que os achados clínicos estiverem disponíveis.
+                    </p>
+                </div>
+                <figure class="imgArticle">
+                    <img class="border" src="./imgs/imgArticle.png" width="700px" height="400px" alt="">   
+                </figure>
+
+            </article>
+
+            <aside>
+                <figure class="imgAside">
+                    <img class="border" src="./imgs/imgAside.jpg" width="700px" height="400px" alt="">
+                </figure>
+                <div>
+                    <p>
+                        Esses vírus foram originalmente transmitidos de animais para pessoas. O SARS, por exemplo, foi transmitido de gatos da civeta para humanos, enquanto o MERS se mudou para humanos de um tipo de camelo.
+                        <br><br>
+                        Vários coronavírus conhecidos estão circulando em animais que ainda não infectaram humanos.
+                        <br><br>
+                        O nome coronavírus vem da palavra latina corona, que significa coroa ou auréola. Sob um microscópio eletrônico, o vírus parece estar cercado por uma coroa solar.
+                        <br><br>
+                        O novo coronavírus, identificado pelas autoridades chinesas em 7 de janeiro e desde então denominado SARS-CoV-2, é uma nova cepa que não havia sido previamente identificada em humanos.
+                        <br><br>
+                        Pouco se sabe sobre isso, embora a transmissão de humano para humano tenha sido confirmada.
+                    </p>
+                </div>
+            </aside>
+            <u><h1>Últimas informações sobre o covid-19 no Brasil</h1></u>
+            <div class="boxApi">
+                <div class="api">
+                    
+                    <div class="externo">
+                        
+                        <div class="interno">
+                            <h2>Casos confirmados</h2>
+                            <p id="confirmados">----</p>
+                        </div>
+
+                        <div class="interno">
+                            <h2>Óbitos confirmados</h2>
+                            <p id="mortes">----</p>
+                        
+                        </div>
+                    </div>
+
+                    <div class="externo">
+                        
+                        <div class="interno">
+                            <h2>Casos recuperados</h2>
+                            <p id="curados">----</p>
+                        </div>
+
+                        <div class="interno">
+                            <h2>Em acompanhamento</h2>
+                            <p id="doentes">----</p>
+                        
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="sintomas" id="sintomas"> <!--Section sintomas-->
+
+            <article>
+                <h1>Sintomas</h1>
                 <br>
-                <p>A doença de coronavírus (COVID-19) é uma doença infecciosa causada por um coronavírus recém-descoberto.
-                    <br><br>
-                    A maioria das pessoas infectadas com o vírus COVID-19 experimentará doença respiratória leve a moderada e se recuperará sem a necessidade de tratamento especial. Pessoas mais velhas e pessoas com problemas médicos subjacentes, como doenças cardiovasculares, diabetes, doenças respiratórias crônicas e câncer, têm maior probabilidade de desenvolver doenças graves.
-                    <br><br>
-                    A melhor maneira de prevenir e desacelerar a transmissão é estar bem informado sobre o vírus COVID-19, a doença que causa e como se espalha. Proteja-se e a outros de infecções lavando as mãos ou usando um esfregão à base de álcool com frequência e sem tocar no rosto. 
-                    <br><br>
-                    O vírus COVID-19 se espalha principalmente por gotículas de saliva ou secreção nasal quando uma pessoa infectada tosse ou espirra, por isso é importante que você pratique etiqueta respiratória (por exemplo, tossindo em um cotovelo flexionado).
-                    <br><br>
-                    No momento, não existem vacinas ou tratamentos específicos para o COVID-19. No entanto, existem muitos ensaios clínicos em andamento avaliando possíveis tratamentos. A OMS continuará fornecendo informações atualizadas assim que os achados clínicos estiverem disponíveis.
-                </p>
-            </div>
-            <figure class="imgArticle">
-                <img src="./imgs/imgArticle.png" width="700px" height="400px" alt="">   
-            </figure>
-
-        </article>
-
-        <aside>
-            <figure class="imgAside">
-                <img src="./imgs/imgAside.jpg" width="700px" height="400px" alt="">
-            </figure>
-            <div>
                 <p>
-                    Esses vírus foram originalmente transmitidos de animais para pessoas. O SARS, por exemplo, foi transmitido de gatos da civeta para humanos, enquanto o MERS se mudou para humanos de um tipo de camelo.
+                    Os sinais e sintomas do coronavírus são principalmente respiratórios, semelhantes a um resfriado.
+    
+                    Podem, também, causar infecção do trato respiratório inferior, como as pneumonias. No entanto, o coronavírus (SARS-CoV-2) ainda precisa de mais estudos e investigações para caracterizar melhor os sinais e sintomas da doença.
                     <br><br>
-                    Vários coronavírus conhecidos estão circulando em animais que ainda não infectaram humanos.
-                    <br><br>
-                    O nome coronavírus vem da palavra latina corona, que significa coroa ou auréola. Sob um microscópio eletrônico, o vírus parece estar cercado por uma coroa solar.
-                    <br><br>
-                    O novo coronavírus, identificado pelas autoridades chinesas em 7 de janeiro e desde então denominado SARS-CoV-2, é uma nova cepa que não havia sido previamente identificada em humanos.
-                    <br><br>
-                    Pouco se sabe sobre isso, embora a transmissão de humano para humano tenha sido confirmada.
+                    Se apresentar esses sintomas, procure o seu serviço de saúde de referência. Após o exame pelo profissional de saúde, se for constatado quadro leve, o paciente deve receber o atestado médico e permanecer em casa por 14 dias.
+    
+                    Os endereços das unidades de saúde estão disponíveis nos sites das prefeituras. O atendimento nos hospitais é de média e alta complexidade. Só são encaminhados aos hospitais pacientes com quadros mais graves.
+    
+                    Se tiver dúvidas, ligue a para o 136. Esse é o número do atendimento telefônico gratuito do Sistema Único de Saúde (SUS) e fornece informações e orientações de saúde ao cidadão.
                 </p>
-            </div>
-        </aside>
-        <u><h1>Últimas informações sobre o covid-19 no Brasil</h1></u>
-        <div class="boxApi">
-            <div class="api">
-                
-                <div class="externo">
-                    
-                    <div class="interno">
-                        <h2>Casos confirmados</h2>
-                        <p id="confirmados">----</p>
-                    </div>
-
-                    <div class="interno">
-                        <h2>Óbitos confirmados</h2>
-                        <p id="mortes">----</p>
-                    
-                    </div>
+    
+            </article>
+    
+            <aside>
+                <figure class="img1">
+                    <img class="border" src="./imgs/sintomas.png" alt="">
+                </figure>
+    
+                <div class="list">
+                    <h1>Outros possíveis sintomas:</h1>
+                    <br>
+                    <ul>
+                        <li class="roman">Cansaço</li><br>
+                        <li class="roman">Coriza</li><br>
+                        <li class="roman">Dores de cabeça e náuseas</li><br>
+                        <li class="roman">Vômito e diarréia</li><br>
+                        <li class="roman">Perda de olfato e paladar</li><br>
+                        <li class="roman">Dores musculares</li><br>
+                        <li class="roman">Calafrios Cansaço</li><br>
+                    </ul>
                 </div>
+            </aside>
+    
+        </section>
 
-                <div class="externo">
-                    
-                    <div class="interno">
-                        <h2>Casos recuperados</h2>
-                        <p id="curados">----</p>
-                    </div>
-
-                    <div class="interno">
-                        <h2>Em acompanhamento</h2>
-                        <p id="doentes">----</p>
-                    
-                    </div>
-
+        <section class="cuidados" id="cuidados"> <!--Section cuidados-->
+            <article>
+                <h1>Cuidados</h1>
+                <br>
+                <p>
+                    A principal forma de transmissão do novo Coronavírus é entre pessoas. Por meio de espirros, tosses ou até mesmo a fala, pessoas infectadas expelem gotículas de saliva e secreções que contém o vírus. Essas pequenas gotas podem contaminar superfícies e objetos e, posteriormente, infectar pessoas que tocaram nesses locais e levaram as mãos aos olhos, nariz e boca.
+                    O vírus se dissemina de maneira muito rápida e fácil. O objetivo do distanciamento social é diminuir a proliferação do vírus e, para que isso ocorra, evitar o contato físico e aglomerações é essencial. <br><br> Caso seja necessário sair de casa, medidas de autocuidado devem ser tomadas, como utilizar máscaras, usar álcool em gel 70% ao tocar em qualquer superfície, evitar lugares com aglomerações e sempre que possível higienizar as mãos com água e sabão.
+                    Caso o uso do transporte público seja necessário, a recomendação é para que use máscara, evite tocar em superfícies (como corrimões e apoios), utilize álcool em gel 70% para higienizar as mãos, evite sentar ao lado de outros passageiros e lave a mão com água e sabão assim que possível.
+                </p>
+                <br>
+                <h1>Se eu ficar doente</h1>
+                <br>
+                <p>
+                    Caso você se sinta doente, com sintomas de gripe, evite contato físico com outras pessoas, principalmente idosos e doentes crônicos e fique em casa por 14 dias.
+                    Só procure um hospital de referência se estiver com falta de ar.
+                    <br><br>
+                    <h2>Em caso de diagnóstico positivo para COVID-19, siga as seguintes recomendações:</h2>
+                    <br><br>
+                    <ul class="list">
+                        <li>Fique em isolamento domiciliar.</li>
+                        <br>
+                        <li>Utilize máscara o tempo todo.</li>
+                        <br>
+                        <li>Se for preciso cozinhar, use máscara de proteção, cobrindo boca e nariz todo o tempo.</li>
+                        <br>
+                        <li>Depois de usar o banheiro, nunca deixe de lavar as mãos com água e sabão e sempre limpe vaso, pia e demais superfícies com álcool ou água sanitária para desinfecção do ambiente.</li>
+                        <br>
+                        <li>Separe toalhas de banho, garfos, facas, colheres, copos e outros objetos apenas para seu uso.</li>
+                        <br>
+                        <li>O lixo produzido precisa ser separado e descartado.</li>
+                        <br>
+                        <li>Sofás e cadeiras também não podem ser compartilhados e precisam ser limpos frequentemente com água sanitária ou álcool 70%.</li>
+                        <br>
+                        <li>Mantenha a janela aberta para circulação de ar do ambiente usado para isolamento e a porta fechada, limpe a maçaneta frequentemente com álcool 70% ou água sanitária.</li>
+                    </ul>
+                </p>
+                <br>
+                <h2>Caso o paciente não more sozinho deve-se seguir também as seguintes recomendações:</h2>    
+                <br>
+                <p>
+                    <ul class="list">
+                        <li>Não dormir no mesmo cômodo da pessoa infectada.</li>
+                        <br>
+                        <li>Manter a distância mínima de 1 metro entre o paciente e os demais moradores.</li>
+                        <br>
+                        <li>Limpe os móveis da casa frequentemente com água sanitária ou álcool 70%.</li>
+                        <br>
+                        <li>Se uma pessoa da casa tiver diagnóstico positivo, todos os moradores ficam em isolamento por 14 dias também.</li>
+                        <br>
+                        <li>Caso outro familiar da casa também inicie os sintomas leves, ele deve reiniciar o isolamento de 14 dias. Se os sintomas forem graves, como dificuldade para respirar, ele deve procurar orientação médica.</li>
+                    </ul>
+                </p>
+    
+            </article>
+    
+            <div class="imgs">
+    
+                <div>
+                    <img src="./imgs/icon1.png" class="icon" alt="">
+                    <hr>
+                    <p><a class="destaque">Não dividir</a> utensílios e aparelhos eletrônicos de uso pessoal.</p>
                 </div>
-
+    
+                <div>
+                    <img src="./imgs/icon2.png" class="icon" alt="">
+                    <hr>
+                    <p><a class="destaque">Higienizar</a> constantemente as mãos e o ambiente</p>
+                </div>
+    
+                <div>
+                    <img src="./imgs/icon3.png" class="icon" alt="">
+                    <hr>
+                    <p><a class="destaque">Respeitar</a> a orientação médica de não sair de casa</p>
+                </div>
+    
+                <div>
+                    <img src="./imgs/icon4.png" class="icon" alt="">
+                    <hr>
+                    <p><a class="destaque">Evitar</a> ao máximo levar a mão ao rosto</p>
+                </div>
+    
             </div>
-        </div>
-        <div class="figures">
+        </section>
+
+        <section class="curiosidades" id="curiosidades"> <!--Section Curiosidades-->
+            <article>
+                <h1>Curiosidades</h1>
+                <br>
+                <p>
+                    O Epicentro inicial foi na China concentrando a maioria dos casos
+    
+                    O primeiro caso confirmado fora da China foi registrado em 13/01/20. Nas semanas seguintes, ocorreram registros de casos em vários países do mundo.
+    
+                    Hoje ocorre uma disseminação comunitária sustentada do SARS-CoV-2 registrada globalmente.
+    
+                    Isso significa que as pessoas foram infectadas com o vírus, mas como ou onde algumas delas foram infectadas não é conhecido e segue a transmissão do vírus.
+                    <br><br>
+                    Neste momento, a Europa, mais precisamente a Itália, é o epicentro da Pandemia, uma vez que o numero de casos novos diários registrados lá, ultrapassa os da China que já começou a apresentar uma redução no número de casos novos diários
+    
+                    O SARS-CoV-2 está se espalhando na maioria das regiões e foi caracterizado como uma pandemia pela Organização Mundial da Saúde em 11 de março de 2020.
+    
+                    Apesar disso, até este momento, a declaração não muda as orientações de definição de casos suspeitos e as medidas para contenção da circulação do vírus.O Epicentro inicial foi na China concentrando a maioria dos casos
+    
+                    O primeiro caso confirmado fora da China foi registrado em 13/01/20. Nas semanas seguintes, ocorreram registros de casos em vários países do mundo.
+                </p>
+                <br>
+            </article>
+            <aside>
+                <div>
+                    <p>
+                        Hoje ocorre uma disseminação comunitária sustentada do SARS-CoV-2 registrada globalmente
+    
+                        Isso significa que as pessoas foram infectadas com o vírus, mas como ou onde algumas delas foram infectadas não é conhecido e segue a transmissão do vírus.
+    
+                        Neste momento, a Europa, mais precisamente a Itália, é o epicentro da Pandemia, uma vez que o numero de casos novos diários registrados lá, ultrapassa os da China que já começou a apresentar uma redução no número de casos novos diários
+    
+                        O SARS-CoV-2 está se espalhando na maioria das regiões e foi caracterizado como uma pandemia pela Organização Mundial da Saúde em 11 de março de 2020.
+    
+                        Apesar disso, até este momento, a declaração não muda as orientações de definição de casos suspeitos e as medidas para contenção da circulação do vírus.
+                    </p>
+                </div>
+                <figure width="700" height="400">    
+                    <iframe width="700" height="400" src="https://www.youtube-nocookie.com/embed/tcrZd5uxajw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </figure>    
+            </aside>
+        </section>
+
+        <section class="figures">
             <figure class="img3">
                 <a target="t_blank" href="https://covid.saude.gov.br/"><img  src="./imgs/gráfico.png" alt="" width="200px" height="200px"></a>
                 <br><br><hr>
-                <p class="link" class="pimg">Para informações mais detealhadas sobre o covid-19 no Brasil</p>
+                <p class="link" class="pimg">Para dados mais completos sobre o covid-19 no Brasil</p>
             </figure>
 
             <figure class="img1">
@@ -123,17 +302,19 @@
                 <br><br><hr>
                 <p class="link"  class="pimg">Para mais informações vindas do G1</p>
             </figure>
-        </div>
-        
-        <footer>
-            <h1>FIQUE EM CASA</h1>
-            <p>Faça sua parte para combatermos o vírus da melhror forma possível</p>
-            <div class="freepik">
-                <p class="copyright">Covid-19 © Copyright 2020</p>
-                Icons made by <a target="T_blank" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a target="T_blank" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-            </div>
-        </footer>
+        </section>
+
     </section>
+
+    <footer>
+        <h1>FIQUE EM CASA</h1>
+        <p>Faça sua parte para combatermos o vírus da melhror forma possível</p>
+        <div class="freepik">
+            <p class="copyright">Covid-19 © Copyright 2020</p>
+            Icons made by <a target="T_blank" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a target="T_blank" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body> 
 </html>
