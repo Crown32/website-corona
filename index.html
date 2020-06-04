@@ -84,34 +84,63 @@
                     <div class="estados">
                         <h1>Veja as estatíscas da covid-19 por divisão de estados</h1>
                         <ul class="listEstados">
-                            <li><input type="button" value="Todos" onclick="todos()"></li>
-                            <li><input type="button" value="Acre" onclick="acre()"></li>
-                            <li><input type="button" value="Alagoas" onclick="alagoas()"></li>
-                            <li><input type="button" value="Amapá" onclick="amapa()"></li>
-                            <li><input type="button" value="Amazonas" onclick="amazonas()"></li>
-                            <li><input type="button" value="Bahia" onclick="bahia()"></li>
-                            <li><input type="button" value="Ceará" onclick="ceara()"></li>
-                            <li><input type="button" value="Distrito Federal" onclick="distrito_federal()"></li>
-                            <li><input type="button" value="Espírito Santo" onclick="espirito_santo()"></li>
-                            <li><input type="button" value="Goiás" onclick="goias()"></li>
-                            <li><input type="button" value="Maranhão" onclick="maranhao()"></li>
-                            <li><input type="button" value="Mato Grosso" onclick="mato_grosso()"></li>
-                            <li><input type="button" value="Mato Grosso do Sul" onclick="mato_grosso_do_sul()"></li>
-                            <li><input type="button" value="Minas Gerais" onclick="minas_gerais()"></li>
-                            <li><input type="button" value="Pará" onclick="para()"></li>
-                            <li><input type="button" value="Paraíba" onclick="paraiba()"></li>
-                            <li><input type="button" value="Paraná" onclick="parana()"></li>
-                            <li><input type="button" value="Pernambuco" onclick="pernambuco()"></li>
-                            <li><input type="button" value="Piauí" onclick="piaui()"></li>
-                            <li><input type="button" value="Rio de Janeiro" onclick="rio_de_janeiro()"></li>
-                            <li><input type="button" value="Rio Grande do Norte" onclick="rio_grande_do_norte() "></li>
-                            <li><input type="button" value="Rio Grande do Sul" onclick="rio_grande_do_sul()"></li>
-                            <li><input type="button" value="Rondônia" onclick="rondonia()"></li>
-                            <li><input type="button" value="Roraima" onclick=" roraima() "></li>
-                            <li><input type="button" value="Santa Catarina" onclick="santa_catarina()"></li>
-                            <li><input type="button" value="São Paulo" onclick="sao_paulo()"></li>
-                            <li><input type="button" value="Sergipe" onclick="sergipe() "></li>
-                            <li><input type="button" value="Tocantins" onclick=" tocantins()"></li>
+
+                            <li><button onclick="todos()">Todos os estados</button></li>
+
+                            <li><button value="ac" onclick="estados(this.value)">Acre</button></li>
+
+                            <li><button value="al" onclick="estados(this.value)">Alagoas</button></li>
+
+                            <li><button value="ap" onclick="estados(this.value)">Amapá</button></li>
+
+                            <li><button value="am" onclick="estados(this.value)">Amazonas</button></li>
+
+                            <li><button value="bh" onclick="estados(this.value)">Bahia</button></li>
+
+                            <li><button value="ce" onclick="estados(this.value)">Ceará</button></li>
+
+                            <li><button value="df" onclick="estados(this.value)">Distrito Federal</button></li>
+
+                            <li><button value="es" onclick="estados(this.value)">Espírito Santo</button></li>
+
+                            <li><button value="go" onclick="estados(this.value)">Goiás</button></li>
+
+                            <li><button value="ma" onclick="estados(this.value)">Maranhão</button></li>
+
+                            <li><button value="mt" onclick="estados(this.value)">Mato Grosso</button></li>
+
+                            <li><button value="ms" onclick="estados(this.value)">Mato Grosso do Sul</button></li>
+
+                            <li><button value="mg" onclick="estados(this.value)">Minas Gerais</button></li>
+
+                            <li><button value="pa" onclick="estados(this.value)">Pará</button></li>
+
+                            <li><button value="pb" onclick="estados(this.value)">Paraíba</button></li>
+
+                            <li><button value="pr" onclick="estados(this.value)">Paraná</button></li>
+
+                            <li><button value="pe" onclick="estados(this.value)">Pernambuco</button></li>
+
+                            <li><button value="pi" onclick="estados(this.value)">Piauí</button></li>
+
+                            <li><button value="rj" onclick="estados(this.value)">Rio de Janeiro</button></li>
+
+                            <li><button value="rn" onclick="estados(this.value)">Rio Grande do Norte</button></li>
+
+                            <li><button value="rs" onclick="estados(this.value)">Rio Grande do Sul</button></li>
+
+                            <li><button value="ro" onclick="estados(this.value)">Rondônia</button></li>
+
+                            <li><button value="rr" onclick="estados(this.value)">Roraima</button></li>
+
+                            <li><button value="sc" onclick="estados(this.value)">Santa Catarina</button></li>
+
+                            <li><button value="sp" onclick="estados(this.value)">São Paulo</button></li>
+
+                            <li><button value="se" onclick="estados(this.value)">Sergipe</button></li>
+                            
+                            <li><button value="to" onclick="estados(this.value)">Tocantins</button></li>
+
                         </ul>
                         <p id="aviso">* Dependendo de sua rede pode demorar até 10s para atualizar as informações</p>
                     </div>
